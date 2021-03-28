@@ -27,3 +27,7 @@ export const TOOL_INFO = {
         icon: "./assets/c-sharp.png"
     },
 }
+
+export function get_project(name) {
+    return PROJECTS.find(project => project.url_name === name)
+}

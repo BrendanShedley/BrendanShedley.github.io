@@ -15,7 +15,7 @@
                 <v-card-subtitle>{{ project.summary }}</v-card-subtitle>
 
                 <v-card-actions>
-                    <v-btn :href="'projects/' + project.url_name">More info</v-btn>
+                    <v-btn :href="'/projects/' + project.url_name">More info</v-btn>
                 </v-card-actions>
             </v-col>
         </v-row>
