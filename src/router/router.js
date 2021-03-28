@@ -1,10 +1,13 @@
-import Router from "vue-router";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-import HomePage from "./components/HomePage.vue";
-import ProjectSearch from "./components/ProjectSearch.vue";
-import ProjectDetails from "./components/ProjectDetails.vue"
+import HomePage from "../components/HomePage.vue"
+import ProjectSearch from "../components/ProjectSearch.vue"
+import ProjectDetails from "../components/ProjectDetails.vue"
 
-export default new Router({
+Vue.use(VueRouter)
+
+export default new VueRouter({
     // mode: "history",
     routes: [
         {

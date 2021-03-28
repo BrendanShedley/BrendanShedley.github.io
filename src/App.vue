@@ -1,6 +1,6 @@
 <template>
   <v-app>
-     <v-app-bar app hide-on-scroll color="cyan lighten-2">
+      <v-app-bar app hide-on-scroll color="cyan lighten-2">
 
       <v-toolbar-title>Brendan's Portfolio</v-toolbar-title>
 
@@ -12,7 +12,7 @@
   <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
 
     <v-main>
-      <v-container>
+      <!-- <v-container>
         <v-row dense>
           <v-col>
             <div v-for="project in projects" :key="project.name">
@@ -22,7 +22,8 @@
           </v-col>
         </v-row>
       </v-container>
-      <HelloWorld/>
+      <HelloWorld/> -->
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
@@ -35,7 +36,7 @@ import {PROJECTS} from './projects';
 export default {
   name: 'App',
 
-  components: {
+  Components: {
     HelloWorld,
     ProjectPreview
   },
