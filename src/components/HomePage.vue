@@ -1,6 +1,7 @@
 <template>
   <div>
-    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
+    <!-- <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax> -->
+    <!-- <v-parallax src="https://www.desktopbackground.org/download/o/2014/08/31/817851_black-backgrounds-wood-i-wallpapers-2560x1440-pixel-hd-pattern_2560x1440_h.jpg"></v-parallax> -->
     <v-container>
         <v-row dense>
             <v-col>

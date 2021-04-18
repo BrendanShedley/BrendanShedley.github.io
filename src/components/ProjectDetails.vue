@@ -12,11 +12,12 @@
             </v-btn>
         </v-fab-transition>
         <h1>{{ project.name }}</h1>
-        <v-sheet
-            color="grey"
-            height="400px"
-        >
-        </v-sheet>
+        <div v-if="project.embed_html" class="main-content">
+            <v-sheet v-if="!showEmbed" class="embedded-content" color="grey">
+                <v-btn @click="toggleEmbed">Play</v-btn>
+            </v-sheet>
+            <iframe v-else class="embedded-content" :src="project.embed_html" frameBorder="0" scrolling="no"></iframe>
+        </div>
         <h4>{{ project.summary }}</h4>
         <p>{{ project.description}}</p>
         <v-row>
@@ -46,14 +47,35 @@ import {get_project} from "../projects"
 export default {
     data() {
         return { 
-            project: get_project(this.$route.params.project)
+            project: get_project(this.$route.params.project),
+            showEmbed: false,
         }
     },
     methods: {
+        toggleEmbed() {
+            this.showEmbed = true
+        }
     }
 }
 </script>
 
 <style>
+.main-content {
+    /* width: 90%;
+    height: calc(100vw * 600/960); */
+    width: 960px;
+    height: 638px;
+    /* width: 90%;
+    max-width: 960px;
+    padding-top: 57%; */
+    margin: auto;
+}
 
+.embedded-content {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+}
 </style>

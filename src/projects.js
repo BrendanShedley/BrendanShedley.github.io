@@ -5,7 +5,8 @@ export const PROJECTS = [
         summary: "A self-driving drift racing simulation powered by neural networks and a genetic algorithm",
         description: "",
         categories: ["AI", "Game", "Original"],
-        tools: ["Unity", "C#"]
+        tools: ["Unity", "C#"],
+        embed_html: "/projects/Out of Ctrls/index.html",
     },
     {
         name: "Trailblazer",
@@ -13,7 +14,8 @@ export const PROJECTS = [
         summary: "A multiplayer party platformer, based on games like SKATE and parkourse.",
         description: "",
         categories: ["Game", "Online", "Original"],
-        tools: ["Unity", "C#", "Photon"]
+        tools: ["Unity", "C#", "Photon"],
+        embed_html: "",
     },
 ]
 
